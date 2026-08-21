@@ -37,14 +37,14 @@
 
   <main>
     <section class="destaque">
-      <div class="destaque-conteudo">
+      <div class="destaque-conteudo destaque-imagem">
         <div class="destaque-texto">
           <h1>Burger de verdade,<br />na brasa.</h1>
           <p>
             Pão brioche, carne 160g grelhada na hora e ingredientes
             fresquinhos — sem atalho, sem enrolação.
           </p>
-          <a href="#cardapio" class="botao batao-primario">ver cardapio</a>
+          <a href="#cardapio" class="botao botao-primario">ver cardapio</a>
         </div>
         <img src="assets/icons/burger-classico.svg" alt="">
       </div>
@@ -182,6 +182,38 @@
         </div>
         <button type="submit" class="botao botao-primario formulario enviar">Confirmar reservas</button>
       </form>
+      <div class="confirmacao-reserva" id="confirmacaoReserva">
+
+      </div>
+
     </section>
+
+    <section class="chamada-acao" id="pedir"> 
+      <h2>Bateu a fome?</h2>
+      <p>Peça pelo delivery ou venha comer no salão — abrimos todos os dias, das 18h à meia-noite.</p>
+      <a href="#" class="botao botao-realce">Peça pelo WhatsApp</a>
+    </section>
+
   </main>
+  <footer class="rodape-site" id="contato">
+    <div class="rodape-info">
+      <p>&copy; 2026 Chama Burger — Rua das Brasas, 123, São Caetano do Sul</p>
+      <p class="rodape-horario">Todos os dias, das 18h à meia-noite</p>
+    </div>
+
+    <ul class="rodape-links"> 
+      <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a></li>
+      <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i><span>Facebook</span></a></li>
+      <li><a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a></li>
+      <li><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i><span>TikTok</span></a></li>
+      <li><a href="#" aria-label="Ver no mapa"><i class="fa-solid fa-location-dot"></i><span>Ver no mapa</span></a></li>
+    </ul>
+  </footer>
+
+    <div class="resumo-carrinho" id="resumoCarrinho">
+      <span class="carrinho-icone">🛒</span>
+      <span id="carrinhoQuantidade">0</span> itens · <span id="carrinhoTotal">R$ 0,00</span>
+    </div>
+    <script src="script.js"></script>
+
 </body>
