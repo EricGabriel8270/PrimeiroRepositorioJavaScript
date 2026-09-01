@@ -131,13 +131,13 @@ do{
 //let conta = 0;Variavel de controle.
 //conta < 10 - analise de condicao
 //conta++ - o que acontece com a variavel de controle.
-
+/*
 for( let conta = 0;conta < 10; conta++){
     console.log(conta)
 }
 
 console.log("O loop terminou.")
-
+*/
 //tabuada 
 /*
 const numero = Number(prompt("Tabuada de qual numero"))
@@ -158,7 +158,7 @@ else{
 }
 */
 //Exiba numero pares de 0 a 20
-
+/*
 console.log("Numero pares de 0 a 20: \n")
 
 for(let pares= 0; pares <=20; pares+=2){
@@ -175,7 +175,7 @@ for(let conta = 10; conta >= 1; conta-- ){
 }
 
 console.log("Decolar!")
-
+*/
 //DESAFIO
 /*
 Crie um programa que mostre os numeros de 1 a 3.
@@ -304,20 +304,68 @@ for(let conta = 5; conta >= 1; conta-- ){
 console.log("Decolar!")
 */
 //Exercicio 7
-const numero = Number(prompt("Qual e o valor?"))
+/*
+const entrada = prompt("Qual é o valor?")
 let resultado = 0
 let expressao = ""
-    for(let i = 1; i<= numero; i++){
-        resultado=resultado + i 
-        expressao+=i
 
-        if (i< numero){
-            expressao += "+ "
-        }
+for (let i = 0; i < entrada.length; i++) {
+    const digito = Number(entrada[i])
+
+    resultado += digito
+    expressao += digito
+    
+    if (i < entrada.length - 1) {
+        expressao += " + "
     }
+}
 
 console.log(`${expressao} = ${resultado}`)
+*/
+/*
+//Exercicio 8
+const entrada = Number(prompt("Qual é o valor?"))
+let resultado = 1
+let expressao = ""
 
+for (let i = entrada; i >= 1 ; i--) {
 
+    resultado=resultado * i 
+    expressao += i
+    
+    if (i <= entrada && i>1) {
+        expressao += " * "
+    }
+}
 
+console.log(`${expressao} = ${resultado}`)
+*/
+//Exercicio 9
+/*
+const entrada = prompt("Qual é o valor?")
+let resultado = 0
+let expressao = ""
 
+for (let i = entrada.length; i > 0; i--) {
+    const digito = Number(entrada[i])
+    resultado += digito
+    expressao += i
+}
+
+console.log(`${expressao}`)
+*/
+//Exercicio 10
+
+for(let numero = 1; numero <= 1000; numero++){
+    let soma = 0
+
+    for (let divisor = 1;divisor < numero; divisor++){
+        if(numero % divisor ===0){
+            soma += divisor;
+        
+    }
+}
+if(soma === numero){
+    console.log(numero);
+}
+}
